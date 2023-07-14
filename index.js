@@ -1,26 +1,44 @@
-const clientes = [
-  {
-    nombre: "Mauricio Delgado",
-    mail: "mauridelgado@mauridelgado.com",
-    cedula: 11011010,
-    prestamo: 50000,
-    plazo: 12,
-  },
-];
-function inicio() {
-  const botonCliente = document.getElementsById("inicio");
-  botonCliente.addEventListener("click", login);
-  console.log(inicio);
+const cumples = document.getElementById("cumples");
+const listaCumples = document.getElementById("listaCumples");
+
+const cumpleanos = JSON.parse(localStorage.getItem("cumpleanos")) || [];
+
+function mostrarCumples() {
+  listaCumples.innerHTML = "";
+
+  cumpleanos.forEach((cumple, index) => {
+    const li = document.createElement("li");
+    li.textContent = `${cumple.nombre} - ${cumple.fecha}`;
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Eliminar";
+    deleteButton.addEventListener("click", () => {
+      cumpleanos.splice(index, 1);
+      mostrarCumples();
+      loGuardo();
+    });
+
+    li.appendChild(deleteButton);
+    listaCumples.appendChild(li);
+  });
 }
 
-function login() {
-  alert("bienvenido");
+function loGuardo() {
+  localStorage.setItem("cumpleanos", JSON.stringify(cumpleanos));
 }
 
-function registrarse() {
-  const botonNuevo = document.getElementById("registro");
-  botonNuevo.addEventListener("click", bienvenido);
-}
-function bienvenido () {
-document.getElementById("formulario").innerHTML = "<form><input type="text" id="ci" placeholder="Ingrese su cédula" /><form>";
-}
+cumples.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const nombre = document.getElementById("nombre").value;
+  const fecha = document.getElementById("fecha").value;
+
+  const cumple = { nombre, fecha };
+
+  cumpleanos.push(cumple);
+  mostrarCumples();
+  loGuardo();
+  cumples.reset();
+});
+
+mostrarCumples();

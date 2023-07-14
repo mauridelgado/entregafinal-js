@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Recordatorio de Cumpleaños</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dn6wz2clp/image/upload/v1689297288/pastel-de-cumpleanos_iel2zt.png"
+    />
   </head>
   <body>
-    <div>
-      <h1>Bienvenido</h1>
-      <input type="text" id="cedula" placeholder="Ingrese su cédula" />
-      <div class="formulario">
-        <button id="inicio">Iniciar sesión</button>
-        <button id="registro">Registrarse</button>
+    <head>
+      <nav>
+        <img
+          src="https://res.cloudinary.com/dn6wz2clp/image/upload/v1689297288/pastel-de-cumpleanos_iel2zt.png"
+          alt="Recordatorio de cumpleaños"
+        />
+      </nav>
+    </head>
+    <main>
+      <div class="texto">
+        <p>
+          Este programa esta diseñado para aquellas personas que tienen
+          problemas para recordar cumpleaños. Si te gusta la idea compartila con
+          tus amigos.
+        </p>
       </div>
-    </div>
-    <script src="./index.js"></script>
+      <section>
+        <h1>Cumpleaños de tu gente cercana!</h1>
+
+        <form id="cumples">
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required />
+          </div>
+          <div>
+            <label for="fecha">Fecha de Cumpleaños:</label>
+            <input type="date" id="fecha" required />
+          </div>
+          <div>
+            <button type="submit">Agregar Cumpleaños</button>
+          </div>
+        </form>
+      </section>
+
+      <ul id="listaCumples"></ul>
+    </main>
+    <footer>
+      <div class="foot">
+        <p>Acordáte de desearles un muy feliz cumpleaños!!</p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

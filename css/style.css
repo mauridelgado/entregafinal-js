@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: beige;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  width: 8rem;
+}
+nav {
+  background-color: #ffb07f;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+#cumples {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  margin: 1rem;
+}
+h1 {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+section {
+  background-color: azure;
+  padding: 1rem;
+}
+input,
+label {
+  font-size: 1.5rem;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #ffecaf;
+}
+li {
+  font-size: 2rem;
+}
+button {
+  background-color: #f31559;
+  color: white;
+  padding: 1rem;
+  border-radius: 10%;
+  margin: 1rem;
+}
+.texto {
+  margin: 1.5rem 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  font-size: 2rem;
+}
+footer {
+  background-color: #ffb07f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  margin-top: auto;
+  width: 100vw;
+}
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

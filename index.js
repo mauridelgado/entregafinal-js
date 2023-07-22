@@ -66,7 +66,7 @@ function obtenerMes(fecha) {
 
 async function obtenerImagenMes(mes) {
   try {
-    const response = await fetch("api.json");
+    const response = await fetch("./api.json");
     const data = await response.json();
     const mesData = data.find((item) => item.nombre === mes);
     return mesData ? mesData.imagen : null;

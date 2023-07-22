@@ -9,6 +9,8 @@ async function mostrarCumples() {
   for (const [index, cumple] of cumpleanos.entries()) {
     const li = document.createElement("li");
 
+    const diaCumple = obtenerDia(cumple.fecha);
+
     const mesCumple = obtenerMes(cumple.fecha);
     const rutaImagen = await obtenerImagenMes(mesCumple);
     if (rutaImagen) {
@@ -20,7 +22,9 @@ async function mostrarCumples() {
     }
 
     const nombreFechaTexto = document.createElement("span");
-    nombreFechaTexto.textContent = `${cumple.nombre} - ${cumple.fecha}`;
+    nombreFechaTexto.textContent = `${cumple.nombre} cumple el ${
+      diaCumple + 1
+    } de ${mesCumple}`;
     li.appendChild(nombreFechaTexto);
 
     const deleteButton = document.createElement("button");
@@ -34,6 +38,11 @@ async function mostrarCumples() {
     li.appendChild(deleteButton);
     listaCumples.appendChild(li);
   }
+}
+
+function obtenerDia(fecha) {
+  const fechaObj = new Date(fecha);
+  return fechaObj.getDate();
 }
 
 function obtenerMes(fecha) {
@@ -83,6 +92,14 @@ cumples.addEventListener("submit", (e) => {
   mostrarCumples();
   loGuardo();
   cumples.reset();
+  Swal.fire({
+    title: "Buena brooo!",
+    text: "El cumple ha sido guardado.",
+    imageUrl: "./assets/img/exito.avif",
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: "Lionel",
+  });
 });
 
 mostrarCumples();

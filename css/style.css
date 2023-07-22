@@ -5,6 +5,7 @@
 }
 body {
   background-color: beige;
+  min-height: 100%;
 }
 html {
   font-size: 62.5%;
@@ -52,6 +53,9 @@ ul {
 }
 li {
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 button {
   background-color: #f31559;
@@ -74,13 +78,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
-  margin-top: auto;
   width: 100vw;
 }
 .foot {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.imgCumple {
+  display: inline-block;
+  vertical-align: middle;
+  height: 10rem;
+  width: auto;
+  margin: 1rem 3rem;
 }

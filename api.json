@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nombre": "enero",
+    "imagen": "./assets/img/enero.jpeg"
+  },
+  {
+    "id": 2,
+    "nombre": "febrero",
+    "imagen": "./assets/img/febrero.jpeg"
+  },
+  {
+    "id": 3,
+    "nombre": "marzo",
+    "imagen": "./assets/img/marzo.jpeg"
+  },
+  {
+    "id": 4,
+    "nombre": "abril",
+    "imagen": "./assets/img/abril.png"
+  },
+  {
+    "id": 5,
+    "nombre": "mayo",
+    "imagen": "./assets/img/mayo.jpeg"
+  },
+  {
+    "id": 6,
+    "nombre": "junio",
+    "imagen": "./assets/img/junio.jpeg"
+  },
+  {
+    "id": 7,
+    "nombre": "julio",
+    "imagen": "./assets/img/julio.avif"
+  },
+  {
+    "id": 8,
+    "nombre": "agosto",
+    "imagen": "./assets/img/agosto.jpeg"
+  },
+  {
+    "id": 9,
+    "nombre": "septiembre",
+    "imagen": "./assets/img/setiembre.webp"
+  },
+  {
+    "id": 10,
+    "nombre": "octubre",
+    "imagen": "./assets/img/octubre.gif"
+  },
+  {
+    "id": 11,
+    "nombre": "noviembre",
+    "imagen": "./assets/img/noviembre.jpeg"
+  },
+  {
+    "id": 12,
+    "nombre": "diciembre",
+    "imagen": "./assets/img/diciembre.jpeg"
+  }
+]

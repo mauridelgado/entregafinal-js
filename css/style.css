@@ -4,17 +4,17 @@
   box-sizing: border-box;
 }
 body {
-  background-color: beige;
+  background-color: #eeeded;
   min-height: 100%;
 }
 html {
   font-size: 62.5%;
 }
 img {
-  width: 8rem;
+  width: 19rem;
 }
 nav {
-  background-color: #ffb07f;
+  background-color: #cee6f3;
   display: flex;
   justify-content: center;
   padding: 1rem;
@@ -49,7 +49,7 @@ ul {
   justify-content: center;
   align-items: center;
   list-style: none;
-  background-color: #ffecaf;
+  background-color: #8cc0de;
 }
 li {
   font-size: 2rem;
@@ -74,7 +74,7 @@ p {
   font-size: 2rem;
 }
 footer {
-  background-color: #ffb07f;
+  background-color: #1d5d9b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,6 +84,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 .imgCumple {
   display: inline-block;

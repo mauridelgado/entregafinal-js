@@ -51,6 +51,12 @@ ul {
   list-style: none;
   background-color: #8cc0de;
 }
+.texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
 li {
   font-size: 2rem;
   display: flex;
@@ -64,11 +70,7 @@ button {
   border-radius: 10%;
   margin: 1rem;
 }
-.texto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 p {
   font-size: 2rem;
 }
